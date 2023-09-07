@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #181818;
+    --foreground: #fff;
+
+    --card: #1f1f1f;
+    --card-foreground: var(--foreground);
+
+    --popover: #1f1f1f;
+    --popover-foreground: var(--foreground);
+
+    --primary: #1256a1;
+    --primary-foreground: var(--foreground);
+
+    --secondary: #878787;
+    --secondary-foreground: #878787;
+
+    --muted: var(--secondary);
+    --muted-foreground: var(--secondary-foreground);
+
+    --accent: var(--primary);
+    --accent-foreground: var(--primary-foreground);
+
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: var(--foreground);
+
+    --border: var(--secondary);
+    --border-subtle: #333333;
+
+    --input: var(--secondary);
+    --ring: hsl(222.2 84% 4.9%);
+
+    --radius: 0.5rem;
+
+    --navbar-height: 70px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border font-main;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-3xl font-black md:text-7xl;
+  }
+  h2 {
+    @apply text-5xl font-semibold;
+  }
+}
