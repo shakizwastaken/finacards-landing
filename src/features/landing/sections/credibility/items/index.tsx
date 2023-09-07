@@ -22,7 +22,7 @@ export default function LandingCredibilityItems() {
       label: "servis chaque mois.",
       currency: "pays",
     },
-  ] as const;
+  ];
 
   const mapItems = () =>
     items.map((item, i) => <LandingCredibilityItem key={i} {...item} />);
