@@ -23,28 +23,32 @@ export const servicesCards: CardProps[] = [
   },
   {
     icon: LayersIcon,
-    title: "Production de Cartes",
-    description: "Fourniture et personnalisation des cartes.",
+    title: "Fidélité",
+    description: "Offre globale de gestion de la fidélité.",
   },
   {
     icon: LayersIcon,
-    title: "Production de Cartes",
-    description: "Fourniture et personnalisation des cartes.",
+    title: "Chéquiers et LCN",
+    description:
+      "Personnalisation des chéquiers, lettre de change et tout document sécurisé.",
   },
   {
     icon: LayersIcon,
-    title: "Production de Cartes",
-    description: "Fourniture et personnalisation des cartes.",
+    title: "Éditique et Impression",
+    description:
+      "Traitement des factures, relevés et tout document ou lettre d'information aux clients impression en couleur HD.",
   },
   {
     icon: LayersIcon,
-    title: "Production de Cartes",
-    description: "Fourniture et personnalisation des cartes.",
+    title: "ProductionCall Center",
+    description:
+      "Gestion de tout type d'appels (Entrants, Sortants, VAD, CRC, SAV, etc.).",
   },
   {
     icon: LayersIcon,
-    title: "Production de Cartes",
-    description: "Fourniture et personnalisation des cartes.",
+    title: "Gestion électronique des documents",
+    description:
+      "Archivage des documents,Flux et processus,Software et Hardware.",
   },
 ];
 
