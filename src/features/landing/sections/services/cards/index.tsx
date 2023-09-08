@@ -1,4 +1,13 @@
-import { LayersIcon, SmartphoneCharging, type LucideIcon } from "lucide-react";
+import {
+  LayersIcon,
+  SmartphoneCharging,
+  type LucideIcon,
+  GiftIcon,
+  PencilRulerIcon,
+  PrinterIcon,
+  PhoneIcon,
+  ScrollTextIcon,
+} from "lucide-react";
 import LandingServicesCard from "./card";
 import { cn } from "@/lib/utils";
 import useHoverEffect from "@/components/hooks/use-hover-effect";
@@ -22,30 +31,30 @@ export const servicesCards: CardProps[] = [
       "Sécurisation des solutions mobilesSécurisations des transactions électroniques.",
   },
   {
-    icon: LayersIcon,
+    icon: GiftIcon,
     title: "Fidélité",
     description: "Offre globale de gestion de la fidélité.",
   },
   {
-    icon: LayersIcon,
+    icon: PencilRulerIcon,
     title: "Chéquiers et LCN",
     description:
       "Personnalisation des chéquiers, lettre de change et tout document sécurisé.",
   },
   {
-    icon: LayersIcon,
+    icon: PrinterIcon,
     title: "Éditique et Impression",
     description:
       "Traitement des factures, relevés et tout document ou lettre d'information aux clients impression en couleur HD.",
   },
   {
-    icon: LayersIcon,
+    icon: PhoneIcon,
     title: "ProductionCall Center",
     description:
       "Gestion de tout type d'appels (Entrants, Sortants, VAD, CRC, SAV, etc.).",
   },
   {
-    icon: LayersIcon,
+    icon: ScrollTextIcon,
     title: "Gestion électronique des documents",
     description:
       "Archivage des documents,Flux et processus,Software et Hardware.",

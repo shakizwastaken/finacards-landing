@@ -8,9 +8,15 @@ export default function LandingCredibilityCard() {
       ref={ref}
       className="card card-solo relative flex max-w-[90vw] flex-col items-center justify-center gap-8 overflow-hidden rounded-xl border-1 border-border-subtle bg-card p-8 text-card-foreground md:container sm:gap-0 md:mx-auto md:p-20"
     >
-      <h2 className="z-1 text-center text-xl font-black sm:text-4xl md:text-7xl">
+      <h2 className="z-3 text-center text-xl font-black sm:text-4xl md:text-7xl">
         +20 ans d{"'"}experience, <br /> 100% de clients satisfaits.
       </h2>
+
+      <img
+        src="/assets/globe.png"
+        alt="finacards.ma credit-card preview"
+        className="absolute bottom-0 z-2 translate-y-[50%] md:max-w-[50%]"
+      />
 
       {/* 
             eslint-disable-next-line @next/next/no-img-element
@@ -24,11 +30,6 @@ export default function LandingCredibilityCard() {
       {/* 
               eslint-disable-next-line @next/next/no-img-element
           */}
-      <img
-        src="/assets/globe.png"
-        alt="finacards.ma credit-card preview"
-        className="absolute bottom-0 translate-y-[50%]"
-      />
     </div>
   );
 }
