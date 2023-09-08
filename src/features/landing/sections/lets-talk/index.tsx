@@ -1,15 +1,21 @@
+import useHoverEffect from "@/components/hooks/use-hover-effect";
 import Button from "@/components/ui/button";
 
 export default function LandingLetsTalk() {
+  const ref = useHoverEffect();
+
   return (
-    <div className="container relative mb-8 flex max-w-[90vw] flex-col-reverse items-center rounded-md border-1 border-border-subtle bg-card px-12 text-card-foreground md:mx-auto md:mb-16 md:flex-row">
+    <section
+      ref={ref}
+      className="card card-solo container relative mb-8 flex max-w-[90vw] flex-col-reverse items-center rounded-md border-1 border-border-subtle bg-card px-12 pt-8 text-card-foreground md:mx-auto md:mb-16 md:flex-row"
+    >
       {/* 
         eslint-disable-next-line @next/next/no-img-element
       */}
       <img
         src="/assets/credit-cards/group.png"
         alt="credit card image / finacards.ma"
-        className="invisible md:max-w-[50%] "
+        className="pointer-events-none invisible mt-[20%] md:mt-0 md:max-w-[50%]"
       />
 
       {/* 
@@ -18,7 +24,7 @@ export default function LandingLetsTalk() {
       <img
         src="/assets/credit-cards/group.png"
         alt="credit card image / finacards.ma"
-        className="absolute bottom-0 mx-auto md:max-w-[50%]"
+        className="pointer-events-none absolute bottom-0 mx-auto md:max-w-[50%]"
       />
 
       <div className="flex flex-col items-start justify-center space-y-4 text-start md:space-y-6">
@@ -31,6 +37,6 @@ export default function LandingLetsTalk() {
         </p>
         <Button>Contactez nous</Button>
       </div>
-    </div>
+    </section>
   );
 }

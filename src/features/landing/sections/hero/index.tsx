@@ -4,7 +4,7 @@ import LandingHeroCards from "./cards";
 
 export default function LandingHero() {
   return (
-    <div className="relative flex h-full min-h-screen flex-col">
+    <section className="relative flex h-full min-h-screen flex-col">
       <div className="container flex min-h-[65vh] flex-col items-center justify-center gap-8 text-center">
         <div>
           <h1>
@@ -38,6 +38,6 @@ export default function LandingHero() {
           alt="gradient image"
         />
       </div> */}
-    </div>
+    </section>
   );
 }

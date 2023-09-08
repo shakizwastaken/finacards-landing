@@ -20,8 +20,8 @@ export default function LandingPartners() {
     ));
 
   return (
-    <div className="container flex items-center justify-between gap-8 overflow-hidden py-20 md:py-16">
+    <section className="container flex items-center justify-between gap-8 overflow-hidden py-20 md:py-16">
       {mapPartners()}
-    </div>
+    </section>
   );
 }

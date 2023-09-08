@@ -8,6 +8,7 @@ import LandingLetsTalk from "./sections/lets-talk";
 export default function LandingPage() {
   return (
     <NavbarLayout>
+      
       <LandingHero />
       <LandingServices />
       <LandingPartners />
