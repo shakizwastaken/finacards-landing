@@ -60,11 +60,11 @@
 
 /* medium screen */
 @media (min-width: 640px) {
-  .cards:hover > .card::before {
+  /* .cards:hover > .card::before {
     opacity: 1;
-  }
+  } */
 
-  .card-solo:hover.card::before {
+  .card:hover.card::before {
     opacity: 1;
   }
 
@@ -79,7 +79,7 @@
     opacity: 0;
     position: absolute;
     top: 0px;
-    transition: opacity 500ms;
+    transition: opacity 300ms;
     width: 100%;
   }
 
