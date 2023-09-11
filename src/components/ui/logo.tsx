@@ -16,7 +16,7 @@ export default function Logo({
       height="25"
       viewBox="0 0 197 25"
       xmlns="http://www.w3.org/2000/svg"
-      fill={fill || "white"}
+      fill={fill || "var(--foreground)"}
       className={cn(className, navigate && "cursor-pointer")}
       onClick={(e) => {
         if (navigate) router.push("/");

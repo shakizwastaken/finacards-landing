@@ -16,20 +16,21 @@ export default function Navbar() {
         <Logo className="max-h-[50%]" />
 
         <div className="hidden flex-1 items-center justify-center gap-8 md:flex [&>*]:text-secondary">
-          <Link className="hover:brightness-125" href={"#"}>
-            Nos partenaires
-          </Link>
-          <Link className="hover:brightness-125" href={"#"}>
-            Qui sommes-nous ?
-          </Link>
-          <Link className="hover:brightness-125" href={"#"}>
+          <Link className="hover:brightness-125" href={"/#services"}>
             Nos services
           </Link>
+          <Link className="hover:brightness-125" href={"/#partners"}>
+            Nos partenaires
+          </Link>
+          {/* <Link className="hover:brightness-125" href={"/contact-us"}>
+            Nous-contacter
+          </Link> */}
         </div>
-
-        <Button className="hidden md:block" variant={"outline"}>
-          Contactez nous
-        </Button>
+        <Link href={"/contact-us"}>
+          <Button className="hidden md:block" variant={"outline"}>
+            Contactez nous
+          </Button>
+        </Link>
 
         <MenuIcon className="md:hidden" />
       </div>

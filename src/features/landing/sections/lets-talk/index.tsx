@@ -1,5 +1,6 @@
 import useHoverEffect from "@/components/hooks/use-hover-effect";
 import Button from "@/components/ui/button";
+import Link from "next/link";
 
 export default function LandingLetsTalk() {
   const ref = useHoverEffect();
@@ -35,7 +36,9 @@ export default function LandingLetsTalk() {
           Vous avez un projet ? Vous souhaitez en discuter avec nous ? Nous
           sommes à votre écoute.
         </p>
-        <Button>Contactez nous</Button>
+        <Link href={"/contact-us"}>
+          <Button>Contactez nous</Button>
+        </Link>
       </div>
     </section>
   );

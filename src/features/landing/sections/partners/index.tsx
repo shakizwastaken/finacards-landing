@@ -1,26 +1,23 @@
-export default function LandingPartners() {
-  const partners = [
-    "/assets/partners/partner-1.svg",
-    "/assets/partners/partner-5.svg",
-    "/assets/partners/partner-3.svg",
-    "/assets/partners/partner-4.svg",
-    "/assets/partners/partner-5.svg",
-    "/assets/partners/partner-3.svg",
-  ];
+import partners from "./partners";
 
+export default function LandingPartners() {
   const mapPartners = () =>
-    partners.map((partner, i) => (
+    partners.map((Partner, i) => (
       // eslint-disable-next-line @next/next/no-img-element
-      <img
-        className="w-fit md:flex-shrink"
-        src={partner}
-        key={i}
-        alt="a partner of finacards.ma"
-      />
+      // <Partner
+      // className="w-fit md:flex-shrink [&>*]:fill-foreground"
+      // src={Partner}
+      // key={i}
+      // alt="a partner of finacards.ma"
+      // />
+      <Partner fill="white" />
     ));
 
   return (
-    <section className="container flex items-center justify-between gap-8 overflow-hidden py-20 md:py-16">
+    <section
+      id="partners"
+      className="container flex items-center justify-between gap-8 overflow-hidden py-20 md:py-16"
+    >
       {mapPartners()}
     </section>
   );

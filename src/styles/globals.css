@@ -6,6 +6,42 @@
 
 @layer base {
   :root {
+    --background: #fff;
+    --foreground: #181818;
+
+    --card: #1f1f1f;
+    --card-foreground: var(--background);
+
+    --popover: #1f1f1f;
+    --popover-foreground: var(--foreground);
+
+    --primary: #1256a1;
+    --primary-foreground: var(--background);
+
+    --secondary: #878787;
+    --secondary-foreground: #878787;
+
+    --muted: var(--secondary);
+    --muted-foreground: var(--secondary-foreground);
+
+    --accent: var(--primary);
+    --accent-foreground: var(--primary-foreground);
+
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: var(--foreground);
+
+    --border: var(--secondary);
+    --border-subtle: #333333;
+
+    --input: var(--secondary);
+    --ring: hsl(222.2 84% 4.9%);
+
+    --radius: 0.5rem;
+
+    --navbar-height: 70px;
+  }
+
+  .dark {
     --background: #181818;
     --foreground: #fff;
 
@@ -44,7 +80,7 @@
 
 @layer base {
   * {
-    @apply border-border font-main;
+    @apply scroll-smooth border-border font-main;
   }
   body {
     @apply bg-background text-foreground;

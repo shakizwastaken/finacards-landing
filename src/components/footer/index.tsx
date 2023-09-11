@@ -3,7 +3,7 @@ import Logo from "../ui/logo";
 export default function Footer() {
   return (
     <footer className="card card-solo flex min-h-[20vh] w-full items-center justify-center bg-primary text-card-foreground">
-      <div className="container flex h-full items-center justify-start [&>*]:flex-[50%]">
+      <div className="container flex h-full w-full flex-col items-center justify-start gap-12 py-8 md:flex-row md:gap-0 md:py-0 [&>*]:flex-[50%]">
         <div className="flex h-full flex-col items-start justify-start gap-4">
           <Logo
             onClick={() => {
@@ -12,6 +12,7 @@ export default function Footer() {
                 behavior: "smooth",
               });
             }}
+            fill="var(--primary-foreground)"
             className="h-[25px] opacity-50"
           />
           <p className="text-sm opacity-50">

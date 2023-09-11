@@ -1,6 +1,7 @@
 import Button from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
 import LandingHeroCards from "./cards";
+import Link from "next/link";
 
 export default function LandingHero() {
   return (
@@ -19,6 +20,7 @@ export default function LandingHero() {
           </p>
         </div>
 
+        <Link href={"/contact-us"}>
         <Button
           variant={"default"}
           className="flex items-center justify-center gap-4 px-8 py-6 text-lg"
@@ -26,6 +28,7 @@ export default function LandingHero() {
           <p>Contactez nous</p>
           <ArrowRightIcon />
         </Button>
+        </Link>
       </div>
 
       <LandingHeroCards />
