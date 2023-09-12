@@ -16,7 +16,7 @@ export default function LandingPartners() {
   return (
     <section
       id="partners"
-      className="container flex items-center justify-between gap-8 overflow-hidden py-20 md:py-16"
+      className="container flex items-center justify-center gap-12 overflow-hidden py-20 md:py-16"
     >
       {mapPartners()}
     </section>
