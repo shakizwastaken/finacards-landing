@@ -10,7 +10,7 @@ export default function LandingPartners() {
       // key={i}
       // alt="a partner of finacards.ma"
       // />
-      <Partner fill="white" />
+      <Partner key={i} fill="white" />
     ));
 
   return (
