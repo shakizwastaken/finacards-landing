@@ -21,13 +21,13 @@ export default function LandingHero() {
         </div>
 
         <Link href={"/contact-us"}>
-        <Button
-          variant={"default"}
-          className="flex items-center justify-center gap-4 px-8 py-6 text-lg"
-        >
-          <p>Contactez nous</p>
-          <ArrowRightIcon />
-        </Button>
+          <Button
+            variant={"default"}
+            className="flex items-center justify-center gap-4 px-8 py-6 text-lg"
+          >
+            <p>Contactez nous</p>
+            <ArrowRightIcon />
+          </Button>
         </Link>
       </div>
 
@@ -40,6 +40,7 @@ export default function LandingHero() {
           src="/assets/gradient.png"
           alt="gradient image"
         />
+        
       </div> */}
     </section>
   );
