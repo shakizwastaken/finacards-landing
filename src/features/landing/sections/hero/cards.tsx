@@ -69,7 +69,7 @@ export default function LandingHeroCards() {
 
   return (
     <div className="container relative flex flex-col">
-      <div className="pointer-events-none flex h-full items-center justify-center py-8 md:sticky md:top-0 md:mb-[15%] [&>*]:max-h-[200px] md:[&>*]:max-h-[50vw] ">
+      <div className="pointer-events-none flex h-full items-center justify-center py-8 md:sticky md:top-0 [&>*]:max-h-[200px] md:[&>*]:max-h-[50vw] ">
         <img
           id="card-1"
           className={cn(
@@ -140,7 +140,7 @@ export default function LandingHeroCards() {
 
       <div
         ref={details_container}
-        className="mb-[35%] flex w-full flex-col items-end justify-end px-2 md:container"
+        className="flex w-full flex-col items-end justify-end px-2 md:container"
       >
         <LandingHeroCardDetails
           ref={container_3}
