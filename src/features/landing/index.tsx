@@ -6,6 +6,9 @@ import LandingCredibility from "./sections/credibility";
 import LandingLetsTalk from "./sections/lets-talk";
 
 export default function LandingPage() {
+
+
+  
   return (
     <NavbarLayout dark className="dark">
       <LandingHero />

@@ -76,7 +76,7 @@ export default function LandingHeroCards() {
             "absolute transition-all duration-300 ease-in-out",
             isInView && !isMobile ? "origin-center" : "origin-bottom-left",
             "z-0",
-            isInView && !inView1 && "opacity-0"
+            isInView && !inView1 && !isMobile && "opacity-0"
           )}
           src="/assets/credit-cards/rotated/card-2.png"
           alt={alt}
@@ -103,7 +103,7 @@ export default function LandingHeroCards() {
           className={cn(
             "transition-all duration-300 ease-in-out",
             "z-1",
-            isInView && (!inView2 || inView1) && "opacity-0"
+            isInView && (!inView2 || inView1) && !isMobile && "opacity-0"
           )}
           src="/assets/credit-cards/rotated/card-3.png"
           alt={alt}
@@ -122,7 +122,7 @@ export default function LandingHeroCards() {
             "absolute transition-all duration-300 ease-in-out",
             isInView && !isMobile ? "origin-center" : "origin-bottom-right",
             "z-2",
-            isInView && (!inView3 || inView2) && "opacity-0"
+            isInView && (!inView3 || inView2) && !isMobile && "opacity-0"
           )}
           src="/assets/credit-cards/rotated/card-1.png"
           alt={alt}
@@ -140,19 +140,14 @@ export default function LandingHeroCards() {
 
       <div
         ref={details_container}
-        className="container mb-[35%] flex w-full flex-col items-end justify-end"
+        className="mb-[35%] flex w-full flex-col items-end justify-end px-2 md:container"
       >
         <LandingHeroCardDetails
           ref={container_3}
           title="Carte Biometrique"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, quia, quod voluptates voluptatemLorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quisquam voluptatum,
-              quibusdam, quia, quod voluptates voluptatemLorem ipsum dolor sit
-              amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam,
-              quia, quod voluptates voluptatemLorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quisquam voluptatum, quibusdam,
-              quia, quod voluptates voluptatem"
+              dolor sit amet consectetur adipisicing elit..."
         />
 
         <LandingHeroCardDetails
@@ -160,12 +155,7 @@ export default function LandingHeroCards() {
           title="Carte Metalique"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, quia, quod voluptates voluptatemLorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quisquam voluptatum,
-              quibusdam, quia, quod voluptates voluptatemLorem ipsum dolor sit
-              amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam,
-              quia, quod voluptates voluptatemLorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quisquam voluptatum, quibusdam,
-              quia, quod voluptates voluptatem"
+              dolor sit amet consectetur adipisicing elit..."
         />
 
         <LandingHeroCardDetails
@@ -173,12 +163,7 @@ export default function LandingHeroCards() {
           title="Carte PVC"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               voluptatum, quibusdam, quia, quod voluptates voluptatemLorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quisquam voluptatum,
-              quibusdam, quia, quod voluptates voluptatemLorem ipsum dolor sit
-              amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam,
-              quia, quod voluptates voluptatemLorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quisquam voluptatum, quibusdam,
-              quia, quod voluptates voluptatem"
+              dolor sit amet consectetur adipisicing elit..."
         />
       </div>
     </div>
