@@ -8,7 +8,7 @@ export default function LandingLetsTalk() {
   return (
     <section
       ref={ref}
-      className="card card-solo container relative flex max-w-[90vw] flex-col-reverse items-center rounded-md border-1 border-border-subtle bg-card px-12 pt-8 text-card-foreground md:mx-auto md:flex-row"
+      className="card card-solo container relative mb-8 flex max-w-[90vw] flex-col-reverse items-center rounded-md border-1 border-border-subtle bg-card px-12 pt-8 text-card-foreground md:mx-auto md:mb-16 md:flex-row"
     >
       {/* 
         eslint-disable-next-line @next/next/no-img-element
