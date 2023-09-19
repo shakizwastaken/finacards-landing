@@ -9,7 +9,7 @@ const partners = [
       height="356.688"
       viewBox="0 0 588.023 356.688"
       overflow="visible"
-      enable-background="new 0 0 588.023 356.688"
+      enableBackground="new 0 0 588.023 356.688"
       xmlSpace="preserve"
     >
       <g>

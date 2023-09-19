@@ -32,16 +32,6 @@ export default function LandingHero() {
       </div>
 
       <LandingHeroCards />
-      {/* 
-      <div className="absolute bottom-0 left-0 -z-1 flex h-full w-full flex-col items-center justify-end self-center overflow-x-hidden">
-        
-        <img
-          className="h-full translate-y-[10%] self-center object-cover"
-          src="/assets/gradient.png"
-          alt="gradient image"
-        />
-        
-      </div> */}
     </section>
   );
 }
