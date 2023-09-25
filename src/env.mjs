@@ -9,6 +9,14 @@ export const env = createEnv({
   server: {
     DATABASE_URL: z.string().url(),
     NODE_ENV: z.enum(["development", "test", "production"]),
+
+    SMTP_HOST: z.string(),
+    SMTP_PORT: z.number().default(465),
+    SMTP_LOGIN: z.string(),
+    SMTP_PASSWORD: z.string(),
+
+    SMTP_FROM: z.string().email(),
+    SMTP_TO: z.string(),
   },
 
   /**
@@ -27,6 +35,17 @@ export const env = createEnv({
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
+
+    SMTP_HOST: process.env.SMTP_HOST,
+
+    //@ts-ignore
+    SMTP_PORT: Number(process.env.SMTP_PORT || ""),
+    SMTP_LOGIN: process.env.SMTP_LOGIN,
+    SMTP_PASSWORD: process.env.SMTP_PASSWORD,
+
+    SMTP_FROM: process.env.SMTP_FROM,
+    SMTP_TO: process.env.SMTP_TO,
+
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
 });

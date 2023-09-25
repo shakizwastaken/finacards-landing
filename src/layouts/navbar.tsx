@@ -1,9 +1,8 @@
+import SwitchMode from "@/components/ui/switch-mode";
+import Cursor from "@/components/ui/cursor";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import Cursor from "@/components/ui/cursor";
-import SwitchMode from "@/components/ui/switch-mode";
 import { cn } from "@/lib/utils";
-import { useEffect } from "react";
 
 export default function NavbarLayout({
   children,
@@ -18,9 +17,11 @@ export default function NavbarLayout({
       <div className="relative flex w-full flex-col items-center">
         <SwitchMode defaultValue={dark} />
         <Navbar />
+
         <div className={cn("min-h-full w-full", className)} {...props}>
           {children}
         </div>
+
         <Footer />
       </div>
       <Cursor />

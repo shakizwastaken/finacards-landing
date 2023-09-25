@@ -1,14 +1,18 @@
 import { type AppType } from "next/app";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 import { api } from "@/utils/api";
 
 import "@/styles/globals.css";
-import Cursor from "@/components/ui/cursor";
+import { Toaster } from "@/components/ui/toaster";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
-      <Component {...pageProps} />
+      <ReactLenis root>
+        <Toaster />
+        <Component {...pageProps} />
+      </ReactLenis>
     </>
   );
 };

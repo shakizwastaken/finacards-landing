@@ -80,7 +80,7 @@
 
 @layer base {
   * {
-    @apply scroll-smooth border-border font-main;
+    @apply border-border font-main;
   }
   body {
     @apply bg-background text-foreground;
