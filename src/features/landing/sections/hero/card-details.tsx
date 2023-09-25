@@ -44,8 +44,8 @@ export default forwardRef<
   const handleSubmit: React.FormEventHandler<HTMLButtonElement> = (e) => {
     e.preventDefault();
     if (!email) return;
-
     mutate({ email, name });
+    setOpen(false);
   };
 
   return (
