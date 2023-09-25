@@ -72,7 +72,7 @@ export default function CardDetailsEmail({ name }: { name: string }) {
 
         <Body className="flex h-full items-center justify-center bg-background font-main text-foreground">
           <Container className="flex w-full flex-col items-start justify-center border-2 border-primary bg-white p-8">
-            <Img src="public/assets/logo.svg" />
+            <Img src="/public/assets/logo.svg" />
 
             <p className="font-semibold">
               Bonjour {name},<br />
